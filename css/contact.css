@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+ /* nav bar */
+ :root{
+    --body-color:#E4E9F7;
+    --nav-color:#4070F4;
+    --side-nav: #010718;
+    --text-color:#fff;
+    --search-bar:#F2F2F2;
+    --search-text:#010718;
+ 
+ }
+ body{
+   
+   
+ 
+ }
+ .bar{
+     height: 70px;
+     width: 100%;
+ }
+ nav{
+  position: fixed;
+ 
+  left: 0;
+  right: 0;
+  height: 70px;
+  width: 100%;
+  background-color:var(--nav-color);
+ 
+ 
+  
+ 
+ 
+ }
+ nav .nav-bar{
+   
+     position: relative;
+     height: 100%;
+     max-width: 1000px;
+     width: 100%;
+     background-color: var(--nav-color);
+     margin: 0 auto;
+     padding:0 25px ;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .nav-bar .logo a{
+     
+     font-weight: 500;
+     color: var(--text-color);
+     font-size: 25px;
+     text-decoration: none;
+ 
+ }
+ 
+ .nav-bar .nav-links{
+     display: flex;
+     align-items: center;
+ }
+ 
+ .nav-bar .nav-links li{
+      list-style: none;
+      margin: 0 5px;
+ 
+ }
+ .nav-links li a{
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     color: var(--text-color);
+     text-decoration: none;
+     padding: 10px;
+     
+ 
+ }
+ 
+ .nav-links li a::before{
+     content: '';
+     position: absolute;
+     left: 50%;
+     bottom: 0;
+     
+     transform: translate(50%);
+     height: 3px;
+     width: 6px;
+     border-radius: 50%;
+     background-color: var(--text-color);
+     opacity: 0;
+     transition: all 0.3 ease;
+ 
+     
+ }
+ .nav-links li:hover a::before{
+   opacity:1;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+/* detail */
+
+.container-body{
+  
+    background: #c8e8e9;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+  width: 80%;
+  border-radius: 6px;
+  background: #fff;
+  padding:20px 60px 40px 40px ;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.container .contain{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+.container .contain .left-side{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 15px;
+
+
+  
+}
+.container .contain .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2%;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+ 
+    background: #afafb6;
+ 
+ 
+ 
+ }
+
+.container .contain .details{
+    margin-left: 14px;
+    text-align: center;
+    
+ }
+
+
+.container .contain .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+
+    
+ }
+
+.container .contain .topic{
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.container .contain .details .text-one,
+.container .contain .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.container .contain .right-side{
+    width: 75%;
+    margin-left: 75px;
+  
+  }
+.container .contain .right-side .topic-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #3e2093;
+}
+.container .contain .right-side .input-box{
+height: 50px;
+width: 100%;
+margin: 12px 0;
+}
+.container .contain .right-side .input-box input ,
+.container .contain .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+   border-radius: 6px;
+   font-weight: 500;
+    border: none;
+    background: #f0f1f8; 
+    padding:0 14px;
+    resize: none;
+}
+
+.container .contain .right-side .massag-box{
+    min-height: 90px;
+}
+.container .contain .right-side .button input[type="button"]{
+   color: #fff;
+   background-color: #3e2093;
+   font-size: 18px;
+   border-radius: 6px;
+   padding: 8px 12px;
+   transition: all 0.3 ease;
+   margin-top: 30px;
+
+
+
+}
+.container .contain .right-side .button input[type="button"]:hover{
+    background: #502993;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    position: absolute;
+    width: 100%;
+  
+}

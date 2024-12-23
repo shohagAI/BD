@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* nav bar*/
+
+:root{
+    --body-color:#E4E9F7;
+    --nav-color:#4070F4;
+    --side-nav: #010718;
+    --text-color:#fff;
+    --search-bar:#F2F2F2;
+    --search-text:#010718;
+ 
+ }
+ body{
+   
+   
+ 
+ }
+ .bar{
+     height: 70px;
+     width: 100%;
+ }
+ nav{
+  position: fixed;
+ 
+  left: 0;
+  right: 0;
+  height: 70px;
+  width: 100%;
+  background-color:var(--nav-color);
+ 
+ 
+  
+ 
+ 
+ }
+ nav .nav-bar{
+   
+     position: relative;
+     height: 100%;
+     max-width: 1000px;
+     width: 100%;
+     background-color: var(--nav-color);
+     margin: 0 auto;
+     padding:0 25px ;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .nav-bar .logo a{
+     
+     font-weight: 500;
+     color: var(--text-color);
+     font-size: 25px;
+     text-decoration: none;
+ 
+ }
+ 
+ .nav-bar .nav-links{
+     display: flex;
+     align-items: center;
+ }
+ 
+ .nav-bar .nav-links li{
+      list-style: none;
+      margin: 0 5px;
+ 
+ }
+ .nav-links li a{
+     position: relative;
+     font-size: 17px;
+     font-weight: 500;
+     color: var(--text-color);
+     text-decoration: none;
+     padding: 10px;
+     
+ 
+ }
+ 
+ .nav-links li a::before{
+     content: '';
+     position: absolute;
+     left: 50%;
+     bottom: 0;
+     
+     transform: translate(50%);
+     height: 3px;
+     width: 6px;
+     border-radius: 50%;
+     background-color: var(--text-color);
+     opacity: 0;
+     transition: all 0.3 ease;
+ 
+     
+ }
+ .nav-links li:hover a::before{
+   opacity:1;
+ }
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+/* Details*/
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 400px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
